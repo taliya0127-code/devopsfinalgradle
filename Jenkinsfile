@@ -6,13 +6,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'gradle build'
+                bat 'gradle build'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'gradle run'
+                bat 'gradle run'
             }
         }
 
